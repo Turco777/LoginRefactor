@@ -30,7 +30,7 @@ const httpServer = app.listen(puerto, async () => {
 const socketServer = new Server(httpServer);
 
 mongoose.connect(
-  "mongodb+srv://Ayelenleclerc:yuskia13@backend.xrrgkdz.mongodb.net/ecommerce?retryWrites=true&w=majority"
+  "mongodb+srv://turco123:password123!@cluster0.emmu6m2.mongodb.net/ecommerce?retryWrites=true&w=majority"
 );
 
 app.use(express.static(__dirname + "/public"));
@@ -48,7 +48,7 @@ app.use(
   session({
     store: MongoStore.create({
       mongoUrl:
-        "mongodb+srv://Ayelenleclerc:yuskia13@backend.xrrgkdz.mongodb.net/ecommerce?retryWrites=true&w=majority",
+        "mongodb+srv://turco123:password123!@cluster0.emmu6m2.mongodb.net/ecommerce?retryWrites=true&w=majority",
       mongoOptions: { useNewUrlParser: true, useUnifiedTopology: true },
       ttl: 15000,
     }),
